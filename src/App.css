@@ -25,7 +25,7 @@ body{
 .product-thumbnail {
   max-width: 100%;
   max-height: 200px;
-  flex-grow: 1; /* Allow the image to take up available space */
+  flex-grow: 1;
 }
 
 .product-title {
@@ -51,9 +51,32 @@ body{
   margin-top: 5px;
 }
 
+/* ----------------------------------filter-------------------------------- */
+.product-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product-filter select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product-filter select:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 600px) {
   .product-card {
-    flex: 0 0 calc(50% - 20px); /* For smaller screens, show two products per row */
+    flex: 0 0 calc(50% - 20px);
   }
 
   html {

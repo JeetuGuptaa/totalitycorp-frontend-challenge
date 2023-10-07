@@ -1,5 +1,7 @@
+import Product from "../components/Product"
+
 export default function Home(){
     return (
-        <div>Home</div>
+        <Product />
     )
 }
