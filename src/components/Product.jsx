@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import Filter from "./Filter";
+import Card from './ProductCard'
+import "../assets/styles/product.css"
 
 export default function Product(){
     const [products, setProducts] = useState([]);
@@ -35,17 +37,8 @@ export default function Product(){
         setFilteredProducts(filtered)
     }, [filters, products])
 
-    const productsToDisplay = filteredProducts.map((product)=>{
-        return (
-            <div className="product-card" key = {product.id}>
-                <img className="product-thumbnail" src={product.thumbnail} alt={product.title} />
-                <div className="product-title">{product.title}</div>
-                <div className="product-brand">Brand: {product.brand}</div>
-                <div className="product-price">${product.price}</div>
-                <div className="product-discount">Discount: {product.discountPercentage}</div>
-                <button>Add to Cart</button>
-            </div>
-        )
+    const productsToDisplay = filteredProducts.map((product) => {
+        return <Card product = {product} key={product.id}/>
     })
 
 

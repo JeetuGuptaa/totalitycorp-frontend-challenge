@@ -3,54 +3,6 @@ body{
   box-sizing: border-box;
 }
 
-/* Product Card */
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.product-card {
-  flex: 0 0 calc(30% - 20px); /* Show three products per row with 20px spacing */
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  display: flex;
-  flex-direction: column;
-}
-
-.product-thumbnail {
-  max-width: 100%;
-  max-height: 200px;
-  flex-grow: 1;
-}
-
-.product-title {
-  font-weight: 500;
-  margin: 10px 0;
-  color: #333;
-  font-size: 1rem;
-}
-
-.product-brand {
-  color: #666;
-  font-size: 0.75rem;
-}
-
-.product-price {
-  font-size: 1.25rem;
-  color: #333;
-}
-
-.product-discount {
-  font-size: 0.8rem;
-  color: #FF5733;
-  margin-top: 5px;
-}
-
 /* ----------------------------------filter-------------------------------- */
 .product-filter {
   display: flex;
