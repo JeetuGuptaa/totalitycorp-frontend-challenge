@@ -1,9 +1,25 @@
 # React + Vite
-Since this is a small project, I have used context API instead of Redux
+**To run this small project:**
 
-to run it on your system run:
+1. Clone the repository to your local machine.
+2. Install the dependencies:
+
 npm install
+
+
+3. Start the development server:
+
 npm run dev
+
+
+Now, you can open the application in your browser at http://localhost:5173.
+
+
+Product data is fetched from Dummy JSON: https://dummyjson.com/products, a fake REST API that provides dummy data for development.
+
+
+Only React is used
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
