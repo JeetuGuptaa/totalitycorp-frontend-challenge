@@ -1,8 +1,12 @@
+import {useContext} from 'react' 
 import { Outlet, Link } from "react-router-dom";
 import cartIcon from '../assets/cart-icon.svg'
 import "../assets/styles/NavBar.css";
+import { CartContext } from "../context/CartContext";
 
 export default function NavBar(){
+  const cart = useContext(CartContext).cart
+  console.log(cart)
   return (
     <>
       <nav className="main-nav">
@@ -25,7 +29,7 @@ export default function NavBar(){
         </ul>
         <Link to="/cart" className="cart-link">
           <img src={cartIcon} alt="cart image" className="cart-icon" />
-          Cart(10)
+          Cart({cart.length})
         </Link>
       </nav>
 
