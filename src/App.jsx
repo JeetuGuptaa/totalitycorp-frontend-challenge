@@ -5,6 +5,7 @@ import Cart from './Pages/Cart'
 import './App.css'
 import ProductPage from "./Pages/ProductPage";
 import NavBar from "./components/NavBar";
+import Checkout from "./Pages/checkout";
 import { ProductContextProvider } from "./context/ProductContext";
 import {CartContextProvider} from "./context/CartContext"
 function App() {
@@ -19,6 +20,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="product" element={<Product />} />
               <Route path="cart" element={<Cart />} />
+              <Route path="checkout" element={<Checkout />} />
               <Route path="product/:id" element={<ProductPage />} />
             </Route>
           </Routes>

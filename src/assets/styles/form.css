@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 60%;
+    margin: 10px 0;
+}
+
+form h1{
+    padding : 10px;
+}
+
+input{
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin : 0.7rem; 
+}
+
+.name-conatiner, .contact-info, .area, .cardinfo{
+    display: flex;
+    flex-direction: row;
+    width : 100%;
+}
+
+.name-conatiner input{
+    width: 50%;
+}
+
+.contact-info input{
+    width: 50%;
+}
+
+.cardinfo input{
+    width: 50%;
+}
+
+.area input{
+    width: 33%;
+}

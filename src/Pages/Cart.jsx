@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
 import '../assets/styles/cart.css'
 export default function Cart(){
   const {cart, setCart} = useContext(CartContext);
@@ -112,12 +113,17 @@ export default function Cart(){
             </div>
           </div>
         </div>
-        <button 
+        <Link to ='/checkout' 
           className="add-to-cart-button"
-          style = {{width : "100%"}}
+          style = {
+                    {
+                      width : "100%",
+                      display : 'inline-block'
+                    }
+                  }
         >
           Checkout
-        </button>
+        </Link>
       </div>
     </div>
   );

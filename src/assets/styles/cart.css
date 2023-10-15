@@ -76,7 +76,8 @@
   top : 10px;   
   border-radius: 5px;
   height: 40vh;
-  margin: 10px 0;                                                        ;
+  margin: 10px 0;     
+  z-index : 1;                                                   ;
 }
 
 .price-details-heading{
